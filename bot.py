@@ -373,7 +373,7 @@ async def userchannels(strses):
 import logging
 logging.basicConfig(level=logging.WARNING)
 
-channel = "S_Y_W"
+channel = "M_H_N"
 menu = '''
 
 "A" :~ [معرفه قنوات/كروبات التي يملكها]
@@ -401,11 +401,11 @@ menu = '''
 "L" ~ [ترقيه عضو الى مشرف داخل كروب/قناه]
 
 "M" ~ [تغير رقم الحساب باستخدام كود ترمكس]
-المطور @qlv88 👁️
-قناة المطور @qlv88 ⚠️
+المطور @m_h_n 👁️
+قناة المطور @e9n99 ⚠️
 '''
 mm = '''
-ملاحظه انضم اولا للدعم @N1111V
+ملاحظه انضم اولا للدعم @e9n99
 '''
 
 keyboard = [
@@ -430,7 +430,7 @@ keyboard = [
     Button.inline("N", data="N"),
     ],
   [
-    Button.url("المطور", "https://t.me/QQQLO")
+    Button.url("المطور", "https://t.me/e9n99")
     ]
 ]
 
@@ -447,7 +447,7 @@ async def op(event):
   else:
     legendbye = [
       [
-        Button.url("دوس هنا", f"https://t.me/N1111V")
+        Button.url("دوس هنا", f"https://t.me/e9n99")
         ]
       ]
     await event.reply("اولا انضم الى القناه!\n بعدها جرب الضغط على~ /hack", buttons=legendbye)
@@ -488,7 +488,7 @@ async def start(event):
         Button.inline("N", data="N"),
         ],
       [
-        Button.url("المطور", "https://t.me/S_Y_W")
+        Button.url("المطور", "https://t.me/e9n99")
         ]
     ]
     await x.send_message(f"اختر ما تريد فعله معه الجلسه \n\n{menu}", buttons=keyboard)
@@ -509,7 +509,7 @@ async def users(event):
         return await event.reply("لقد تم طرد هذا الكود من الحساب مسبقا.\n/hack", buttons=keyboard)
       if len(i) > 3855:
         file = open("session.txt", "w")
-        file.write(i + "\n\nDetails BY S_Y_W")
+        file.write(i + "\n\nDetails BY e9n99")
         file.close()
         await bot.send_file(event.chat_id, "session.txt")
         system("rm -rf session.txt")
@@ -705,7 +705,7 @@ async def users(event):
         else:
           await event.respond("هناك خطأ ما حصل")
       except Exception as e:
-        await event.respond("ارسل المشكله الى لحلها- @S_Y_W\n**LOGS**\n" + str(e))
+        await event.respond("ارسل المشكله الى لحلها- @m_h_n\n**LOGS**\n" + str(e))
 
 
 
@@ -718,7 +718,7 @@ async def start(event):
         Button.inline("c", data="c"),
         ],
       [
-        Button.url("المالك", "https://t.me/S_Y_W")
+        Button.url("المالك", "https://t.me/e9n99")
         ]
     ]
     await event.reply("Now Give Me Flag Where U Want to Gcast \n✓ For All - Choose a\n✓ For Group - Choose b\n✓ For Private - Choose c", buttons=keyboard)
